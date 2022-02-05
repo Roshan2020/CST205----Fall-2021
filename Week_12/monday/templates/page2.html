@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {{ bootstrap.load_css() }}
+
+      <title>Your page title</title>
+  </head>
+<body>
+
+    <div class="container">
+      <br>
+
+      <h2>Welcome to page 2</h2>
+
+      <br><br>
+      <ul>
+        {% for thing in my_list['flavors'] %}
+          <li> I like {{ thing }} things.</li>
+        {% endfor %}
+      </ul>
+      <br><br>
+
+      <a href="{{ url_for('page3func', mood='happy') }}">
+        Happy
+      </a>
+      <a href="{{ url_for('page3func', mood='sad') }}">
+        Sad
+      </a>
+
+    </div>
+</body>
+
+  
+</html>

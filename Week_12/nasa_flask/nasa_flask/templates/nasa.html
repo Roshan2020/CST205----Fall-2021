@@ -1,0 +1,25 @@
+{{ bootstrap.load_css() }}
+
+<div class="container mb-4">  
+  <div class="card mt-4">
+    <div class="card-body">
+      <h1>NASA</h1>
+      {% if data %}
+        {% for i in data %}
+          <div class="card">
+            <img src="{{i['url']}}" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title">{{i['title']}}</h5>
+              <p class="card-text">
+                {{i['explanation']}}
+              </p>
+            </div>
+          </div>
+          <br>
+        {% endfor %}
+      {% else %}
+        no data
+      {% endif %}
+    </div>
+  </div>
+</div>

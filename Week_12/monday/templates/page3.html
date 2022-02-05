@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {{ bootstrap.load_css() }}
+      <title>Your page title</title>
+  </head>
+<body>
+  
+    <div class="container">
+
+      <br><br>
+
+      <h2>Welcome to page 3</h2>
+
+      <br>
+
+      {% if mood == "happy" %}
+        <p>Glad to hear things are going well!</p>
+      {% else %}
+        <p>Turn that frown upside down</p>
+      {% endif %}
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {{ bootstrap.load_css() }}
+
+      <title>Your page title</title>
+  </head>
+<body>
+    <div class="container">
+      <br><br>
+
+      <h1>Day {{v2}}</h1>
+
+      <br>
+
+      <p>v1 is {{v1}} and v2 is {{v2}}</p>
+
+      <br>
+
+      <a href="{{ url_for('page2func') }}">
+        Click me
+      </a>
+      
+      <br><br>
+      <p>
+        <img src="/static/images/toscana.jpg" width="500">
+
+      </p>
+
+      <br>
+    </div>
+</body>
+
+</html>

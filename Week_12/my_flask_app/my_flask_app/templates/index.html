@@ -1,0 +1,27 @@
+{{ bootstrap.load_css() }}
+
+<div class="container">
+
+  <a href="{{ url_for('p2') }}">
+    Click me
+  </a>
+
+  <ul>
+    {% for item in my_data['flavors'] %}
+      <li>{{item}} is a flavor</li>
+    {% endfor %}
+  </ul>
+  <p>MY favorite colors are:</p>
+
+  <ol>
+    {% for color in my_data['colors'] %}
+      <li>{{color}}</li>
+    {% endfor %}
+
+  </ol>
+
+
+  <img src="/static/images/ansel.jpg" class="rounded w-50">
+
+</div>
+

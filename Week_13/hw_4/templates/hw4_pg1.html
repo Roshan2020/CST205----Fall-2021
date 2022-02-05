@@ -1,0 +1,19 @@
+<!-- Author: Roshan Indika Menik Arachchi Menik Arachchige -->
+<!-- Team 795 -->
+<!-- Team Members: Arthur, Daniel & Dylan-->
+<!-- SELECTED IMG INFO PAGE -->
+{{ bootstrap.load_css() }}
+
+<div class="container">
+
+	<h2>"{{title}}" by {{user}}</h2>
+  <br>
+	<img src="../static/images/{{id}}.jpg" width="250" class="img-fluid rounded" alt="{{id}}">
+	<br>
+  <br>
+	<a>{{mode}} image in {{form}} format with width {{width}} and height {{height}}</a>
+  <br>
+  <br>  
+	<a href={{url_for('home')}}>Back to list of images</a>
+
+</div>

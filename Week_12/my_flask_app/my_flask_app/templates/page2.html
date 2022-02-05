@@ -1,0 +1,16 @@
+
+{{ bootstrap.load_css() }}
+
+<div class="container">
+
+  <h1>page2</h1>
+
+
+  <a href="{{ url_for('p3', mood='happy') }}">
+    Happy
+  </a>
+  <a href="{{ url_for('p3', mood='sad') }}">
+    Sad
+  </a>
+
+</div>
